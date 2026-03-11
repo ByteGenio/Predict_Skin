@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Skin Diagnosis</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Skin Disease Detection</h1>
+
+<div class="card">
+
+<h2>Patient Image</h2>
+
+<img src="{{img_path}}" width="250">
+
+</div>
+
+<div class="card">
+
+<h2>Diagnosis Report</h2>
+
+<p><b>Disease:</b> {{disease}}</p>
+
+<p><b>Confidence:</b> {{confidence}}%</p>
+
+<p class="{{risk|lower}}">
+<b>Risk Level:</b> {{risk}}
+</p>
+
+<h3>Description</h3>
+<p>{{description}}</p>
+
+<h3>Treatment</h3>
+<p>{{treatment}}</p>
+
+</div>
+
+<a href="/">
+
+<button>Try Another Image</button>
+
+</a>
+
+</div>
+
+</body>
+</html>

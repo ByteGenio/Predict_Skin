@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skin Disease Prediction</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Skin Disease Prediction</h1>
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+
+<input type="file" name="file" required>
+
+<br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+</body>
+</html>
